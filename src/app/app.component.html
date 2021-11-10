@@ -1,0 +1,65 @@
+<header>
+  <div class="row bg-secondary" >
+    <div class="col-11 py-1" style="height: 40px;">
+      <h4 class="text-center text-white fs-6">Welcome</h4>
+    </div>
+    <div class="col-1 p-0">
+      <img height="40" style="float: right;" src="./assets/logo.png"/>
+    </div>
+  </div>
+</header>
+
+<div style="margin-top: 50px;">
+  <div class="row">
+    <div class="col-6"></div>
+    <div class="col-2">
+      <img height="35" width="35" style="float: right;" src="./assets/parking-icon.png"/>
+    </div>
+    <div class="col-2">
+      <img height="35" width="35" style="float: right;" src="./assets/e-parking-icon.png"/>
+    </div>
+    <div class="col-2">
+      <img height="35" width="35" style="float: right;"  src="./assets/disability-parking-icon.png"/>
+    </div>
+  </div>
+
+  <div style="position: absolute; top: 50%; left: 50%;" *ngIf="allLevelData.length === 0">
+    <div class="spinner-border text-success" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <div class="mt-2 mx-2" *ngIf="allLevelData.length > 0">
+    <div class="row" style="margin-top: 25px;" *ngFor="let data of allLevelData">
+      <div class="col-6" style="display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;">
+        <div class="titleLevel">
+        {{data.levelName}}
+      </div>
+      </div>
+      <div class="col-2">
+        <div style="width: 35px;" [ngClass]="data.standardPk === 0 ? 'textLevelZero': 'textLevel'">
+          <div style="float: right;">{{data.standardPk}}
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div style="width: 35px;" [ngClass]="data.eChargedPk === 0 ? 'textLevelZero': 'textLevelEchargedPk'">
+          <div style="float: right;">{{data.eChargedPk}}</div>
+        </div>
+      </div>
+      <div class="col-2">
+        <div  style="width: 35px;" [ngClass]="data.handicappedPk === 0 ? 'textLevelZero': 'textLevel'">
+         <div style="float: right;"> {{data.handicappedPk}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="fixed-bottom mb-5">
+  <div style="float: right; margin-right: 25px;">
+    <img height="25"  style="float: right;"  src="./assets/cleverciti-logo-green.png"/>
+  </div>
+</footer>

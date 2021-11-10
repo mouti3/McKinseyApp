@@ -1,0 +1,17 @@
+html,body { background-color: black; }
+
+@font-face {
+    font-family: firaSans;
+    src: url(assets/fonts/Fira_Sans/FiraSans-Regular.ttf) format("opentype");
+  }
+
+  @font-face {
+    font-family: barlowCondensed;
+    src: url(assets/fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf) format("opentype");
+  }
+
+
+  @font-face {
+    font-family: led;
+    src: url(assets/fonts/ticking-timebomb-bb/TickingTimebombBB.ttf) format("opentype");
+  }

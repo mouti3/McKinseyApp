@@ -1,0 +1,33 @@
+.titleLevel {
+    color: #C7D72E;
+    font-size: 18px;
+    font-family: 'firaSans';
+}
+
+.textLevel {
+    color: #00F900;
+    font-size: 24px;
+    float: right;
+    font-family: 'led';
+    background-color: grey;
+  }
+
+.textLevelZero {
+    color: red;
+    font-size: 24px;
+    float: right;
+    font-family: 'led';
+    background-color: grey;
+}
+
+.textLevelEchargedPk {
+    color: blue;
+    font-size: 24px;
+    font-family: 'led';
+    float: right;
+    background-color: grey;
+  }
+
+  .text-success {
+      color: #C7D72E !important;
+  }
