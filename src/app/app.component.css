@@ -9,7 +9,6 @@
     font-size: 24px;
     float: right;
     font-family: 'led';
-    background-color: grey;
   }
 
 .textLevelZero {
@@ -17,7 +16,6 @@
     font-size: 24px;
     float: right;
     font-family: 'led';
-    background-color: grey;
 }
 
 .textLevelEchargedPk {
@@ -25,7 +23,6 @@
     font-size: 24px;
     font-family: 'led';
     float: right;
-    background-color: grey;
   }
 
   .text-success {
